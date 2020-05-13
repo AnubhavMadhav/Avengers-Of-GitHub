@@ -1,0 +1,165 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url(../bg2.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+.heading {
+    position: relative;
+    top: 97px;
+    left: 25px;
+}
+
+.forms {
+    position: relative;
+    top: 250px;
+}
+
+.form-group {
+    width: 25%;
+    position: relative;
+    left: 160px;
+}
+
+input.transparent-input {
+    background-color: transparent !important;
+    border: none;
+    border-bottom: 2px solid rgb(64, 20, 82);
+    font-size: 25px;
+    /* width: 16%; */
+    font-family: 'Titillium Web', sans-serif;
+}
+
+input:focus {
+    -webkit-box-shadow: none!important;
+    box-shadow: none!important;
+}
+
+.fa-github {
+    font-size: 27px;
+    position: relative;
+    top: 380px;
+    left: 300px;
+    color: white;
+    border-radius: 50%;
+    -webkit-transition: -webkit-transform .8s ease-in-out;
+    transition: transform .8s ease-in-out;
+}
+
+.fa-github:hover {
+    color: rgba(255, 255, 255, 0.329);
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+
+.fa-twitter {
+    font-size: 27px;
+    position: relative;
+    top: 380px;
+    left: 325px;
+    color: rgb(52, 119, 243);
+    border-radius: 50%;
+    -webkit-transition: -webkit-transform .8s ease-in-out;
+    transition: transform .8s ease-in-out;
+}
+
+.fa-twitter:hover {
+    color: rgba(52, 119, 243, 0.685);
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+
+.footer {
+    position: relative;
+    top: 470px;
+    left: 170px;
+    color: rgba(255, 255, 255, 0.726);
+}
+
+.myprofile {
+    color: rgba(255, 255, 255, 0.726);
+}
+
+.myprofile:hover {
+    color: white;
+}
+
+@media (max-width: 991px) {
+    body {
+        background: url(../bg-mobile2.jpg) no-repeat center center fixed;
+        background-size: cover;
+    }
+    .heading {
+        position: relative;
+        top: 34px;
+        right: 126px;
+        left: 0px;
+    }
+    .forms {
+        width: 100%;
+        position: relative;
+        top: 900px;
+        right: 70px;
+    }
+    .form-group {
+        width: 100%;
+        /* position: relative; */
+        /* left: 160px; */
+    }
+    input.transparent-input {
+        background-color: transparent !important;
+        border: none;
+        border-bottom: 2px solid rgb(64, 20, 82);
+        width: 121%;
+        font-size: 34px;
+        font-family: 'Titillium Web', sans-serif;
+    }
+    .fa-github {
+        font-size: 27px;
+        position: relative;
+        top: 950px;
+        left: 260px;
+        color: white;
+        border-radius: 50%;
+        -webkit-transition: -webkit-transform .8s ease-in-out;
+        transition: transform .8s ease-in-out;
+    }
+    .fa-github:hover {
+        color: rgba(255, 255, 255, 0.329);
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+    .fa-twitter {
+        font-size: 27px;
+        position: relative;
+        top: 950px;
+        left: 290px;
+        color: rgb(52, 119, 243);
+        border-radius: 50%;
+        -webkit-transition: -webkit-transform .8s ease-in-out;
+        transition: transform .8s ease-in-out;
+    }
+    .fa-twitter:hover {
+        color: rgba(52, 119, 243, 0.685);
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+    .footer {
+        position: relative;
+        top: 1020px;
+        left: 133px;
+        color: rgba(255, 255, 255, 0.726);
+        padding-bottom: 25px;
+    }
+    .myprofile {
+        color: rgba(255, 255, 255, 0.726);
+    }
+    .myprofile:hover {
+        color: white;
+    }
+}
