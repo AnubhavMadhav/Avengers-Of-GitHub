@@ -5,7 +5,7 @@
 }
 
 body {
-    background: url(../bg2.jpg) no-repeat center center fixed;
+    background: url(../img/bg2.jpg) no-repeat center center fixed;
     background-size: cover;
 }
 
@@ -13,6 +13,13 @@ body {
     position: relative;
     top: 97px;
     left: 25px;
+    -webkit-transition: -webkit-transform .6s ease-in-out;
+    transition: transform .6s ease-in-out;
+}
+
+.heading:hover {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
 }
 
 .forms {
@@ -38,6 +45,28 @@ input.transparent-input {
 input:focus {
     -webkit-box-shadow: none!important;
     box-shadow: none!important;
+}
+
+.btn {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.486);
+    background-color: Transparent;
+    background-repeat: no-repeat;
+    border: 2px solid purple;
+    border-radius: 18px;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+    position: relative;
+    left: 250px;
+}
+
+.btn:hover,
+.btn:active {
+    background-color: rgba(128, 19, 128, 0.801);
+    color: white;
+    border: 2px solid rgba(148, 46, 148, 0.897);
+    /* border: none; */
 }
 
 .fa-github {
@@ -76,7 +105,7 @@ input:focus {
 
 .footer {
     position: relative;
-    top: 470px;
+    top: 430px;
     left: 170px;
     color: rgba(255, 255, 255, 0.726);
 }
@@ -91,39 +120,63 @@ input:focus {
 
 @media (max-width: 991px) {
     body {
-        background: url(../bg-mobile2.jpg) no-repeat center center fixed;
+        background: url(../img/bg-mobile2.jpg) no-repeat center center fixed;
         background-size: cover;
     }
     .heading {
+        height: 61px;
         position: relative;
         top: 34px;
         right: 126px;
         left: 0px;
     }
     .forms {
-        width: 100%;
+        text-align: center;
+        width: 300px;
         position: relative;
-        top: 900px;
-        right: 70px;
+        top: 500px;
+        right: 145px;
     }
     .form-group {
-        width: 100%;
+        text-align: center;
+        width: 90%;
         /* position: relative; */
         /* left: 160px; */
     }
     input.transparent-input {
+        color: rgb(163, 72, 151);
         background-color: transparent !important;
         border: none;
-        border-bottom: 2px solid rgb(64, 20, 82);
+        border-bottom: 2px solid rgb(182, 68, 182);
         width: 121%;
-        font-size: 34px;
+        font-size: 25px;
         font-family: 'Titillium Web', sans-serif;
+    }
+    .btn {
+        font-size: 16px;
+        color: rgba(255, 255, 255, 0.877);
+        background-color: purple;
+        background-repeat: no-repeat;
+        border: 2px solid rgb(182, 68, 182);
+        border-radius: 18px;
+        cursor: pointer;
+        overflow: hidden;
+        outline: none;
+        position: relative;
+        left: 180px;
+    }
+    .btn:focus,
+    .btn:active {
+        background-color: rgba(128, 19, 128, 0.801);
+        color: white;
+        border: 2px solid rgba(148, 46, 148, 0.897);
+        /* border: none; */
     }
     .fa-github {
         font-size: 27px;
         position: relative;
-        top: 950px;
-        left: 260px;
+        top: 590px;
+        left: 140px;
         color: white;
         border-radius: 50%;
         -webkit-transition: -webkit-transform .8s ease-in-out;
@@ -137,8 +190,8 @@ input:focus {
     .fa-twitter {
         font-size: 27px;
         position: relative;
-        top: 950px;
-        left: 290px;
+        top: 590px;
+        left: 180px;
         color: rgb(52, 119, 243);
         border-radius: 50%;
         -webkit-transition: -webkit-transform .8s ease-in-out;
@@ -151,8 +204,8 @@ input:focus {
     }
     .footer {
         position: relative;
-        top: 1020px;
-        left: 133px;
+        top: 660px;
+        left: 16px;
         color: rgba(255, 255, 255, 0.726);
         padding-bottom: 25px;
     }

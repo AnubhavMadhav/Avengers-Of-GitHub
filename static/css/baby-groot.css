@@ -1,0 +1,303 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url(../img/back-2.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+.profile {
+    position: absolute;
+    top: 115px;
+    left: 95px;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    width: 160px;
+    height: auto;
+    -webkit-transition: -webkit-transform .8s ease-in-out;
+    transition: transform .5s ease-in-out;
+}
+
+.profile-pic:hover {
+    -webkit-transform: rotate(10deg);
+    transform: rotate(10deg);
+}
+
+.display-name {
+    color: rgb(238, 230, 230);
+    position: absolute;
+    top: 304px;
+    left: 94px;
+}
+
+.character-name {
+    text-align: center;
+    color: white;
+    position: absolute;
+    top: -133px;
+    left: 457px;
+}
+
+.character-name-image {
+    font-size: 126px;
+    height: 430px;
+}
+
+.quote-block {
+    color: rgb(209, 200, 200);
+    width: 610px;
+    text-align: center;
+    position: absolute;
+    top: 313px;
+    left: 385px;
+}
+
+.github-container {
+    display: flex;
+    color: white;
+    position: absolute;
+    top: 448px;
+    left: 475px;
+}
+
+.logos {
+    display: flex;
+    position: absolute;
+    top: -34px;
+    left: 130px;
+}
+
+.logo1 {
+    position: relative;
+    right: 72px;
+}
+
+.logo2 {
+    position: relative;
+    left: 10px;
+}
+
+.logo3 {
+    position: relative;
+    left: 118px;
+}
+
+.media {
+    width: 30%;
+}
+
+.media-body {
+    text-align: center;
+}
+
+.character-image-container {
+    width: fit-content;
+    position: absolute;
+    top: 19px;
+    /* top: 21px; */
+    left: 1070px;
+}
+
+.character-image {
+    height: 702px;
+    top: 0px;
+    /* height: 772px; */
+}
+
+.code-github {
+    font-size: 27px;
+    position: relative;
+    top: 592px;
+    left: 637px;
+    color: white;
+    border-radius: 50%;
+    -webkit-transition: -webkit-transform .8s ease-in-out;
+    transition: transform .8s ease-in-out;
+}
+
+.code-github:hover {
+    color: rgba(255, 255, 255, 0.329);
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+
+.share-tweet {
+    font-size: 27px;
+    position: relative;
+    top: 592px;
+    left: 677px;
+    color: rgb(52, 119, 243);
+    border-radius: 50%;
+    -webkit-transition: -webkit-transform .8s ease-in-out;
+    transition: transform .8s ease-in-out;
+}
+
+.share-tweet:hover {
+    color: rgba(52, 119, 243, 0.685);
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+
+.footer {
+    position: relative;
+    top: 646px;
+    left: 520px;
+    color: rgba(255, 255, 255, 0.726);
+}
+
+.myprofile {
+    color: rgba(255, 255, 255, 0.726);
+}
+
+.myprofile:hover {
+    color: white;
+}
+
+@media (max-width: 991px) {
+    body {
+        background: url(../img/back-2.jpg) no-repeat center center fixed;
+        background-size: cover;
+    }
+    .character-name {
+        text-align: center;
+        color: white;
+        position: absolute;
+        top: -97px;
+        left: 52px;
+    }
+    .character-name-image {
+        height: 230px;
+    }
+    .profile {
+        margin: 25px 0;
+        position: absolute;
+        top: 115px;
+        left: 95px;
+    }
+    .profile-pic {
+        border-radius: 50%;
+        width: 160px;
+        height: auto;
+        -webkit-transition: -webkit-transform .8s ease-in-out;
+        transition: transform .5s ease-in-out;
+    }
+    .profile-pic:hover {
+        -webkit-transform: rotate(10deg);
+        transform: rotate(10deg);
+    }
+    .display-name {
+        margin: 25px 0;
+        color: rgb(238, 230, 230);
+        position: absolute;
+        top: 304px;
+        left: 94px;
+    }
+    .character-image-container {
+        margin: 52px 0;
+        width: fit-content;
+        position: absolute;
+        top: 340px;
+        /* top: 21px; */
+        left: 97px;
+    }
+    .character-image {
+        height: 430px;
+        top: 0px;
+        /* height: 772px; */
+    }
+    .quote-block {
+        margin: 30px 0;
+        color: rgb(209, 200, 200);
+        width: 250px;
+        text-align: center;
+        position: absolute;
+        top: 863px;
+        left: 52px;
+    }
+    .github-container {
+        margin: 30px 0;
+        text-align: center;
+        display: block;
+        color: white;
+        position: absolute;
+        top: 1050px;
+        left: 100px;
+    }
+    .logos {
+        display: block;
+        position: absolute;
+        top: -34px;
+        left: 130px;
+    }
+    .logo1 {
+        position: relative;
+        top: 34px;
+        left: -79px;
+    }
+    .logo2 {
+        position: relative;
+        top: 115px;
+        left: -75px;
+    }
+    .logo3 {
+        position: relative;
+        top: 200px;
+        left: -73px;
+    }
+    .media {
+        text-align: center;
+        width: 30%;
+    }
+    .media-body {
+        text-align: center;
+        margin: 25px 0;
+    }
+    .code-github {
+        font-size: 27px;
+        position: relative;
+        top: 1450px;
+        left: 140px;
+        color: white;
+        border-radius: 50%;
+        -webkit-transition: -webkit-transform .8s ease-in-out;
+        transition: transform .8s ease-in-out;
+    }
+    .code-github:hover {
+        color: rgba(255, 255, 255, 0.329);
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+    .share-tweet {
+        font-size: 27px;
+        position: relative;
+        top: 1450px;
+        left: 180px;
+        color: rgb(52, 119, 243);
+        border-radius: 50%;
+        -webkit-transition: -webkit-transform .8s ease-in-out;
+        transition: transform .8s ease-in-out;
+    }
+    .share-tweet:hover {
+        color: rgba(52, 119, 243, 0.685);
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+    .footer {
+        padding-bottom: 30px;
+        position: relative;
+        top: 1550px;
+        left: 16px;
+        color: rgba(255, 255, 255, 0.726);
+    }
+    .myprofile {
+        color: rgba(255, 255, 255, 0.726);
+    }
+    .myprofile:hover {
+        color: white;
+    }
+}

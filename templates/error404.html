@@ -5,38 +5,58 @@
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"> -->
+
+    <link href="favicon/avengers.ico" rel="icon" type="image/x-icon" />
+
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/error404.css' %}">
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
     <title>Avengers Of GitHub</title>
 
 </head>
 
 <body>
-    <a class="heading" href="https://fontmeme.com/avengers-font/"><img class="heading" src="https://fontmeme.com/permalink/200513/4b93e31763523165585f75b931268a48.png" alt="avengers-font" border="0"></a>
-    <form action='\result' method='post' class="forms">
-        {% csrf_token %}
-        <!-- Added CSRF Token because we are using POST Method now -->
-        <div class="form-group">
-            <!-- <label for="exampleFormControlTextarea1">Enter your Text here and let the TextUtils do the Magic</label> -->
-            <input type="text" class="form-control transparent-input" placeholder="Enter your GitHub Username" style="color: white;">
-            <!-- <textarea class="form-control" name='text' id="exampleFormControlTextarea1" rows="10"></textarea> -->
-        </div>
-    </form>
+    <!-- <img class="heading" src="https://fontmeme.com/permalink/200513/4b93e31763523165585f75b931268a48.png" alt="avengers-font" border="0"> -->
 
 
-    <a href="https://github.com/AnubhavMadhav/Avengers-Of-GitHub" title="Star the Repository on GitHub"><i class="fab fa-github"></i></a>
+
+
+    <!-- <div class="character-name">
+        <img src="https://fontmeme.com/permalink/200515/646b2e5b93ffc1b1ac5060d6f5cdbb79.png" alt="captain-marvel-font" border="0">
+    </div> -->
+
+    <div class="character-name">
+        <img mx-0 class="character-name-image" src="{% static 'img/4-removebg-preview.jpg' %}" alt="" id='four'>
+        <img mx-0 class="character-name-image" src="{% static 'img/0.jpg' %}" alt="" id='zero'>
+        <img mx-0 class="character-name-image" src="{% static 'img/4-removebg-preview.jpg' %}" alt="" id='four-2'>
+    </div>
+
+    <div class="character-image-container"><img class="character-image" src="{% static 'img/error-groot.jpg' %}" alt=""></div>
+
+
+    <div class="quote-block">
+        <h3>Error 404</h3>
+        <br>
+        <h5 class="quote">'{{ username }}' doesn't exist!! Seems like you have entered the wrong username.</h5> <br>
+        <h4> Or </h4>
+        <br>
+        <h5>If you do not have an account on GitHub, make one here.</h5>
+        <a href="https://github.com/"><img class="github-image" src="{% static 'img/github.jpg' %}" alt="" style="max-height: 61px; color: white;"></a>
+    </div>
+
+
+
+    <a href="https://github.com/AnubhavMadhav/Avengers-Of-GitHub" title="Star the Repository on GitHub"><i class="fab fa-github code-github"></i></a>
 
 
     <a title="Share it on Twitter" class="twitter-share-button" href="https://twitter.com/intent/tweet?text=Try%20this%20out%20and%20get%20to%20know%2C%20which%20Avenger%20are%20you%20according%20to%20your%20GitHub%20Profile.%20Developed%20by%20%40Anubhav_Madhav%0A%23avengers%20%23django%20%23github%0ALink%3A%20https%3A%2F%2Fgithub.com%2FAnubhavMadhav%2FAvengers-Of-GitHub"
         data-size="large">
-        <i class="fab fa-twitter"></i></a>
-
+        <i class="fab fa-twitter share-tweet"></i></a>
 
     <span class="footer"><i class="fas fa-code"></i> with <i class="fas fa-heart"></i> by <a class="myprofile" href="https://anubhavmadhav.github.io/Anubhav-Madhav/">Anubhav Madhav</a></span>
     <!-- Optional JavaScript -->

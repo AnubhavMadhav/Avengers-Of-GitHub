@@ -1,0 +1,52 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"> -->
+    <link href="{% static 'favicon/avengers.ico' %}" rel="icon" type="image/x-icon" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
+    <title>Avengers Of GitHub</title>
+
+</head>
+
+<body>
+    <img class="heading" src="https://fontmeme.com/permalink/200513/4b93e31763523165585f75b931268a48.png" alt="avengers-font" border="0">
+    <form action='\result' method='post' class="forms">
+        {% csrf_token %}
+        <!-- Added CSRF Token because we are using POST Method now -->
+        <div class="form-group">
+            <!-- <label for="exampleFormControlTextarea1">Enter your Text here and let the TextUtils do the Magic</label> -->
+            <input type="text" name="username" class="form-control transparent-input" placeholder="Enter your GitHub Username" style="color: white;">
+            <!-- <textarea class="form-control" name='text' id="exampleFormControlTextarea1" rows="10"></textarea> -->
+        </div>
+        <button type="submit" class="btn btn-light mt-3">Avengers Assemble</button>
+
+    </form>
+
+
+    <a href="https://github.com/AnubhavMadhav/Avengers-Of-GitHub" title="Star the Repository on GitHub"><i class="fab fa-github"></i></a>
+
+
+    <a title="Share it on Twitter" class="twitter-share-button" href="https://twitter.com/intent/tweet?text=Try%20this%20out%20and%20get%20to%20know%2C%20which%20Avenger%20are%20you%20according%20to%20your%20GitHub%20Profile.%20Developed%20by%20%40Anubhav_Madhav%0A%23avengers%20%23django%20%23github%0ALink%3A%20https%3A%2F%2Fgithub.com%2FAnubhavMadhav%2FAvengers-Of-GitHub"
+        data-size="large">
+        <i class="fab fa-twitter"></i></a>
+
+
+    <span class="footer"><i class="fas fa-code"></i> with <i class="fas fa-heart"></i> by <a class="myprofile" href="https://anubhavmadhav.github.io/Anubhav-Madhav/">Anubhav Madhav</a></span>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+
+</html>
