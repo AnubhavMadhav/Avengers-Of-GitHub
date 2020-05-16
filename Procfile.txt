@@ -1,1 +1,0 @@
-web: gunciorn Avengers_Of_GitHub.wsgi
