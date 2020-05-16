@@ -9,7 +9,7 @@ def index(request):
     return render(request, 'avengers/index.html')
 
 def result(request):
-    # return render(request, 'avengers/thor.html')
+
     username = request.POST.get('username')
 
     url = f'https://api.github.com/users/{username}'
@@ -19,8 +19,7 @@ def result(request):
     r = requests.get(url.format(username)).json()
     r2 = requests.get(url2.format(username)).json()
 
-    # display_name = ""
-    # full_name = ""
+
 
 
     #
@@ -30,7 +29,7 @@ def result(request):
     # print("Profile Picture URL :", r['avatar_url'] + '.png')
 
     # print(r)
-    # print("Space")
+
     # print(r3)
 
 
@@ -159,7 +158,7 @@ def result(request):
                           'quote': quote, 'nfolls': r['followers'], 'norgs': len(r2), 'nrepos': r['public_repos']}
                 return render(request, 'avengers/thor.html', params)
             elif score > 200:
-                quote = "'I am Iron Man!!' You are the best of all. You have a nature of never giving up. You are known for your perseverance, and are loved by all."
+                quote = "'I am Iron Man!!', suits to you. You are the best of all. You have a nature of never giving up. You are known for your perseverance, and are loved by all."
                 params = {'profile_pic': r['avatar_url'] + '.png', 'full_name': full_name, 'display_name': display_name,
                           'quote': quote, 'nfolls': r['followers'], 'norgs': len(r2), 'nrepos': r['public_repos']}
                 return render(request, 'avengers/iron-man.html', params)
