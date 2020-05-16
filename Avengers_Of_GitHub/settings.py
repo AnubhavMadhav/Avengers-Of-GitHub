@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = ')ceom0_5y%ogm*imldv9vb_g@lp%=*kcm%uuq4h^&q_^8*38&m'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['avengers-of-github.herokuapp.com']
 STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
