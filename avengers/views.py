@@ -42,7 +42,7 @@ def result(request):
         if username == 'AnubhavMadhav':
             full_name = r['name']
             display_name = r['name'].strip().split(' ')[0]
-            quote = "Anubhav Madhav is the Best."
+            quote = "You are the Strongest. You have the ability to do whatever you want. You are the master of all."
             params = {'profile_pic': r['avatar_url'] + '.png' , 'full_name': full_name, 'display_name':display_name, 'quote': quote, 'nfolls': r['followers'], 'norgs': len(r2), 'nrepos': r['public_repos'] }
             return render(request, 'avengers/thor.html', params)
         else:
