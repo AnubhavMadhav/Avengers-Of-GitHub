@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/Avengers-Of-GitHub.iml" filepath="$PROJECT_DIR$/.idea/Avengers-Of-GitHub.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../PyGames/.idea/PyGames.iml" filepath="$PROJECT_DIR$/../PyGames/.idea/PyGames.iml" />
     </modules>
   </component>
 </project>
