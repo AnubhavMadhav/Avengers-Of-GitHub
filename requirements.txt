@@ -18,7 +18,7 @@ defusedxml==0.6.0
 Deprecated==1.2.9
 distlib==0.3.0
 dj-database-url==0.5.0
-Django==3.0.5
+Django==3.0.14
 django-bootstrap4==1.1.1
 dnspython==1.16.0
 entrypoints==0.3
