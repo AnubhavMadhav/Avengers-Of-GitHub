@@ -45,7 +45,7 @@ jedi==0.16.0
 Jinja2==2.11.2
 joblib==0.14.1
 jsonschema==3.2.0
-jwcrypto==0.7
+jwcrypto==1.4
 kiwisolver==1.2.0
 Markdown==3.2.1
 MarkupSafe==1.1.1
