@@ -43,7 +43,7 @@ ipywidgets==7.5.1
 jdcal==1.4.1
 jedi==0.16.0
 Jinja2==2.11.2
-joblib==0.14.1
+joblib==1.2.0
 jsonschema==3.2.0
 jwcrypto==0.7
 kiwisolver==1.2.0
